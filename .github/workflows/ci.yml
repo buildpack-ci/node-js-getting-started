@@ -1,0 +1,10 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Clone app repo
+      uses: actions/checkout@v2
+    - name: Build and run unit tsts with Buildpack CI
+      uses: buildpack-ci/run-tests@master
