@@ -7,4 +7,4 @@ jobs:
     - name: Clone app repo
       uses: actions/checkout@v2
     - name: Build and run unit tsts with Buildpack CI
-      uses: buildpack-ci/run-tests@master
+      uses: buildpack-ci/run-tests@v1
